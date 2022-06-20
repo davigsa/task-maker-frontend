@@ -14,7 +14,7 @@ export const GlobalCss = createGlobalStyle`
 		border-radius: 24px;
 		background-color: #fafafa;
 		text-align: center;
-		width: 100%;
-		max-width: 1280px;
+		max-width: 100%;
+		width: 700px;
 	}
 `
