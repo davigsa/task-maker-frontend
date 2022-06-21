@@ -1,6 +1,11 @@
+import { ListProject } from '../../components/ListProject'
+
 function Homepage () {
 	return (
-		<h1>Homepage</h1>
+		<section>
+			<h1>Homepage</h1>
+			<ListProject />
+		</section>
 	)
 }
 
