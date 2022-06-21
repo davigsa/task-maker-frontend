@@ -17,7 +17,9 @@ function Login () {
 				username,
 				password,
 			},{
-				headers: 'Content-type": "application/json; charset=UTF-8'
+				headers: {
+					'Content-type': 'application/json; charset=UTF-8'
+				}
 			}
 		).then(res => {
 			const user = { token: res.data.token, username: res.data.user.username }

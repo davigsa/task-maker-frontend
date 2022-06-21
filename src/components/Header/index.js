@@ -4,18 +4,7 @@ import { HeaderContainer, StyledLink, StyledUl } from './styles'
 import { GlobalContext } from '../../contexts/GlobalContext'
 
 function Header () {
-	const { globalState, setGlobalState } = useContext(GlobalContext)
-
-	useEffect(() => {
-		if (!globalState.user && typeof window !== "undefined") {
-			const item = localStorage.getItem('user')
-			const user = JSON.parse(item)
-
-			if (item) {
-				setGlobalState({ ...globalState, user})
-			}
-		}
-	}, [globalState, setGlobalState])
+	const { globalState } = useContext(GlobalContext)
 
 	return (
 		<HeaderContainer className="App-header">

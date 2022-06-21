@@ -15,6 +15,10 @@ export const GlobalCss = createGlobalStyle`
 		background-color: #fafafa;
 		text-align: center;
 		max-width: 100%;
-		width: 700px;
+		width: 780px;
+	}
+
+	ul {
+		padding: 0;
 	}
 `
