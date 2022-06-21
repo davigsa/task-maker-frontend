@@ -20,4 +20,8 @@ export const FormContainer = styled.form`
 		border-radius: 24px;
 		font-weight: bold;
 	}
+
+	span {
+		color: red;
+	}
 `
